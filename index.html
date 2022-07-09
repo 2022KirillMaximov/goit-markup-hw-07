@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <!-- nomalize start -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+<!-- nomalize end -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- Fonts start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,15 +20,20 @@
   </head>
   <body>
     <!-- Header section -->
+
     <header class="header">
       <!-- navigation menu -->
-      <nav class="header-nav">
-        <a class="logo link" href="./index.html">
-           Web<span class="logo-black">Studio</span>
+      <div class="conteiner header-conteiner">
+      
+        <a class="logo link logo-position" href="./index.html">
+          Web<span class="logo-black">Studio</span>
         </a>
-        <ul class="list">
+        <nav class="header-nav">
+        <ul class="list header-list ">
           <li class="header-item">
-            <a class="header-link header-link-current link" href="/index.html">Студия</a>
+            <a class="header-link header-link-current link" href="/index.html"
+              >Студия</a
+            >
           </li>
           <li class="header-item">
             <a class="header-link link" href="./portfolio.html"> Портфолио</a>
@@ -35,28 +43,40 @@
           </li>
         </ul>
       </nav>
-
+       
       <!-- contacts  -->
-      <ul class="list">
-        <li >
-          <a class="header-contact link " href="mailto:info@devstudio.com"
-            >info@devstudio.com</a>
+      <ul class="list contact-list ">
+        <li class=header-mail>
+          <a class="header-contact  link header-item" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
-        <li >
-          <a class=" header-contact link " href="tel:+380961111111"
+        <li class=header-mail>
+          <a class="header-contact link header-item" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
         </li>
       </ul>
+      
+      </div>
+      
     </header>
     <!-- main section -->
     <main>
+      
       <section class="baner">
+        <div class="conteiner">
         <h1 class="baner-slogan">Эффективные решения для вашего бизнеса</h1>
-        <button class="baner-button" type="button"><span >Заказать услугу</span> </button>
+        <button class="baner-button" type="button">
+          <span class="baner-button-txt">Заказать услугу</span>
+        </button>
+        </div>
       </section>
+      
+      <div class="conteiner"> 
+        <!--Преймущества</ -->
       <section class="benefits">
-        <h2 class="benefits-slogan">Преймущества</h2>
+        
         <ul class="benefits-list list">
           <li>
             <h3 class="benefits-lst-itm-slogan">Внимание к деталям</h3>
@@ -88,6 +108,8 @@
           </li>
         </ul>
       </section>
+      </div>
+      <div class="conteiner">
       <section class="about">
         <h2 class="about-slogan">Чем мы занимаемся</h2>
         <ul class="about-list list">
@@ -117,7 +139,10 @@
           </li>
         </ul>
       </section>
+      </div>
+      <!-- team section -->
       <section class="team">
+        <div class="conteiner">
         <h2 class="team-slogan">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-member">
@@ -128,8 +153,10 @@
               width="270"
               height="260"
             />
+            <div class="team-wraper">
             <h3 class="team-member-name">Игорь Демьяненко</h3>
             <p class="team-member-prof" lang="eng">Product Designer</p>
+            </div>
           </li>
           <li class="team-member">
             <img
@@ -139,8 +166,10 @@
               width="270"
               height="260"
             />
+            <div class="team-wraper">
             <h3 class="team-member-name">Ольга Репина</h3>
             <p class="team-member-prof" lang="eng">Frontend Developer</p>
+            </div>
           </li>
           <li class="team-member">
             <img
@@ -150,8 +179,10 @@
               width="270"
               height="260"
             />
+            <div class="team-wraper">
             <h3 class="team-member-name">Николай Тарасов</h3>
             <p class="team-member-prof" lang="eng">Marketing</p>
+            </div>
           </li>
           <li class="team-member">
             <img
@@ -161,19 +192,26 @@
               width="270"
               height="260"
             />
+            <div class="team-wraper">
             <h3 class="team-member-name">Михаил Ермаков</h3>
             <p class="team-member-prof" lang="eng">UI Designer</p>
+            </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- footer section -->
     <footer class="footer">
-      <a class="logo link" href="./index.html">Web<span class="logo-white">Studio</span>
+      <div class="conteiner">
+        <div class="footer-logo">
+      <a class="logo link " href="./index.html"
+        >Web<span class="logo-white">Studio</span>
       </a>
+      </div>
       <address class="address">
-        <ul class="list">
-          <li>
+        <ul class="list ">
+          <li class=footer-adress-list>
             <a
               class="link-map"
               href="https://goo.gl/maps/jmTaeeZg9YCNijqT7"
@@ -182,16 +220,19 @@
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li>
+          <li class=footer-adress-list>
             <a class="link footer-contact" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="link footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="last-contact">
+            <a class="link footer-contact" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
