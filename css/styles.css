@@ -297,9 +297,12 @@ color: #757575
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-}
+    
 
+}
+.filter-item {
+    flex-basis: calc((100%-60) / 3);
+}
 .portfolio-item-wraper{
     outline: #FFFFFF 1px;
         background-color: #FFFFFF;
