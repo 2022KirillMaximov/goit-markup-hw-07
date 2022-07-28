@@ -65,12 +65,17 @@ p {
     cursor: pointer;
     font-family: inherit;
     background-color: #F5F4FA;
+    border-radius: 4px;
+    border: none;
 }
 
 .btn:hover,
 .btn:focus {
     color: #FFFFFF;
     background-color: var(--acent-txt-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+     0px 1px 2px rgba(0, 0, 0, 0.08), 
+     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -147,7 +152,23 @@ Header section
 }
 
 .header-link-current {
+    
+    position: relative;
     color: var(--acent-txt-cl);
+    padding-bottom: 27px;
+}
+.header-link-current::after{
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+  
+
 }
 
 
@@ -381,6 +402,9 @@ Header section
     padding-bottom: 30px;
     padding-left: 5px;
     padding-right: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
 }
 
 .team-member{
@@ -486,13 +510,15 @@ fill: #AFB1B8;
 
 
 }
+.filter-button{
 
+}
 .filter-item {
     flex-basis: calc((100% - var(--ident)-*var(--items-in-filtr)) / 3);
 }
 
 .portfolio-item-wraper {
-    border: #FFFFFF 1px;
+    border:  1px solid #FFFFFF;
     border-top: none;
     background-color: #FFFFFF;
     padding-top: 20px;
@@ -587,7 +613,8 @@ display: flex;
    background-color: rgba(255, 255, 255, 0.1);
    border-radius: 50%;
 }
-.footer-social-link:hover{
+.footer-social-link:hover,
+.footer-social-link:focus{
     background-color: #2196F3;
 }
 .footer-contact {
