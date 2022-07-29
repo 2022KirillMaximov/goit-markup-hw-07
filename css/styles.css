@@ -59,6 +59,8 @@ p {
     background-color: #F5F4FA;
     border-radius: 4px;
     border: none;
+    padding: 6px 12px;
+
 
     transition-property: color,background-color;
     transition-duration: 250ms;
@@ -97,7 +99,8 @@ p {
 
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    visibility: hidden;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
 }
 .backdrop.is-hidden{
@@ -190,7 +193,7 @@ Header section
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    color: #212121
+    color: #212121;
      transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -505,7 +508,7 @@ border-radius: 0px 0px 4px 4px;
 
    .socials-icon{
     fill: #AFB1B8;
-    transition-property: background-color,fill;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
     
@@ -580,8 +583,9 @@ fill: #AFB1B8;
 }
 /* карточка в портфолио фото и оверфлоу*/
 .filter-conteiner {
+    display: block;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    /* border: 1px solid #EEEEEE; */
 }
 .portfolio-list {
     display: flex;
@@ -591,27 +595,26 @@ fill: #AFB1B8;
 
 }
 
-.filter-item {
-
+.filter-conteiner {
+    display: block;
     flex-basis: calc((100% - var(--ident)-*var(--items-in-filtr)) / 3);
-     transition-property: transform;
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
-
-.filter-item:hover .overlay-filter {
+.filter-thumb:focus .overlay-filter,
+.filter-thumb:hover .overlay-filter {
 transform: translateY(0);
 
 }
-.filter-item:hover{
-     border: 1px solid #EEEEEE;
-    width: 369px;
+.filter-conteiner:hover{
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .filter-thumb{
     position: relative;
     overflow: hidden;
 }
+
 
 .overlay-filter{
     position: absolute;
@@ -640,9 +643,7 @@ line-height:calc(28/18);
 letter-spacing: 0.03em;
 text-align: center;
 }
-.filter-button{
 
-}
 
 /* карточка в портфолио заголовок */
 .portfolio-item-wraper {
