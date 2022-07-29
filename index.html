@@ -72,11 +72,11 @@
     </header>
     <!-- main section -->
     <main>
-      
+      <!-- hero section -->
       <section class="baner overlay">
         <div class="conteiner">
         <h1 class="baner-slogan">Эффективные решения для вашего бизнеса</h1>
-        <button class="baner-button baner-button-position" type="button">
+        <button  class="baner-button baner-button-position" type="button" data-modal-open>
           <span class="baner-button-txt">Заказать услугу</span>
         </button>
         </div>
@@ -89,7 +89,7 @@
         <ul class="benefits-list list">
  
           <li class="benefits-blocks antena-icon">
-<div class="thumb">                     <svg width="70" height="70">
+<div class="benefits-thumb">                     <svg width="70" height="70">
             <use href="./images/symbol-defs.svg#antenna">
 
             </use>
@@ -101,7 +101,7 @@
             </p>
           </li>
           <li class="benefits-blocks clock-icon">
-                    <div class="thumb"> <svg width="70" height="70">
+                    <div class="benefits-thumb"> <svg width="70" height="70">
             <use href="./images/symbol-defs.svg#clock">
 
             </use>
@@ -113,7 +113,7 @@
             </p>
           </li>
           <li class="benefits-blocks diagram-icon">
-                       <div class="thumb"> <svg width="70" height="70">
+                       <div class="benefits-thumb"> <svg width="70" height="70">
             <use href="./images/symbol-defs.svg#diagram">
 
             </use>
@@ -125,7 +125,7 @@
             </p>
           </li>
           <li class="benefits-blocks astronaut-icon">
-             <div class="thumb"><svg width="70" height="70">
+             <div class="benefits-thumb"><svg width="70" height="70">
             <use href="./images/symbol-defs.svg#astronaut">
 
             </use>
@@ -145,29 +145,43 @@
         <div class="conteiner">
         <h2 class="about-slogan">Чем мы занимаемся</h2>
         <ul class="about-list list">
+         
           <li class="about-item">
+             <div class="about-photo">
             <img
               src="./images/Chem_my_zanimayemsya1.jpg"
               alt="работа на пк"
               width="370"
               height="294"
             />
-          </li>
+<div class="about-title"><p>Десктопні додатки</p></div>
+</div>          
+</li>
           <li class="about-item">
-            <img
+            <div class="about-photo">
+                          <img
               src="./images/Chem_my_zanimayemsya2.jpg"
               alt="работа на тел и пк"
               width="370"
               height="294"
             />
+            <div class="about-title"><p>Мобільні додатки</p></div>
+
+            </div>
+
           </li>
           <li class="about-item">
-            <img
+            <div class="about-photo">
+  <img
               src="./images/Chem_my_zanimayemsya3.jpg"
               alt="работа на планшете"
               width="370"
               height="294"
             />
+            <div class="about-title"><p>Дизайнерські рішення</p></div>
+
+            </div>
+          
           </li>
         </ul>
          </div>
@@ -442,5 +456,15 @@
      
      
     </footer>
+    <!-- модальное окно -->
+    <div data-modal class="backdrop is-hidden" >
+      <div class="modal">
+        <button data-modal-close class="modal-btn">
+          <svg height="11px" width="11px" class="modal-icon">
+          <use href="./images/symbol-defs.svg#close"></use>
+        </svg></button>
+      </div>
+    </div>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
