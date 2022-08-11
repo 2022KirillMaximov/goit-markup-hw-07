@@ -217,7 +217,7 @@ Header section
     content: "";
     position: absolute;
     left: 0;
-    bottom:0;
+    bottom: -5px;
     width: 100%;
     height: 4px;
     background-color: #2196F3;
@@ -273,7 +273,7 @@ Header section
 /* section baner */
 
 .baner {
-    max-width: 1600 px;
+    max-width: 1600px;
     background-color: var(--dark-bg-cl);
     text-align: center;
     padding-top: 200px;
@@ -283,6 +283,8 @@ Header section
     background-repeat: no-repeat;
     background-position: center;
     min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .baner-slogan {
@@ -497,14 +499,14 @@ border-radius: 0px 0px 4px 4px;
    background-color: #FFFFFF;
    border-radius: 50%;
    
-    transition-property: fill;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
     
 }
 .social-link:hover,
 .social-link:focus{
-    fill:#2196F3;
+    background-color:#2196F3;
 }
 
    .socials-icon{
@@ -516,7 +518,6 @@ border-radius: 0px 0px 4px 4px;
    }
   .social-link:hover .socials-icon,
   .social-link:focus .socials-icon{
-    background-color:#2196F3;
     fill: #FFFFFF;
   }
 /* 
@@ -599,7 +600,7 @@ fill: #AFB1B8;
 .filter-conteiner {
     display: block;
     flex-basis: calc((100% - var(--ident)-*var(--items-in-filtr)) / 3);
-    transition-property: transform;
+    transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
@@ -648,7 +649,7 @@ text-align: center;
 
 /* карточка в портфолио заголовок */
 .portfolio-item-wraper {
-    border:  1px solid #FFFFFF;
+    border:  1px solid #EEEEEE;
     border-top: none;
     background-color: #FFFFFF;
     padding-top: 20px;
