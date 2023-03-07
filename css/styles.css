@@ -144,12 +144,17 @@ p {
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)  ;
 }
 
 .modal-btn:hover .modal-icon,
 .modal-btn:focus .modal-icon{
-    fill:#404BBF;
+    fill:#FFFFFF;
+    
 }
+.modal-btn:hover,
+.modal-btn:focus {background-color: #404BBF;}
+
 .modal-icon{
     
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)  ;
@@ -187,7 +192,7 @@ form in modal  */
    padding: 10px 42px;
    cursor: pointer;
    color: #FFFFFF;
-   background-color: #2196F3;
+   background-color: #4D5AE5;
    border: none;
    border-radius: 4px;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -195,6 +200,10 @@ form in modal  */
    font-size: 16px;
    line-height: calc(30/16);
 
+}
+.registr-form-btn:hover,
+.registr-form-btn:focus{
+    background-color: #404BBF;
 }
 .form-label{
 color: #8E8F99;
@@ -221,16 +230,23 @@ line-height: calc(24/14);
    border: 1px solid rgba(33, 33, 33, 0.2);
    border-radius: 4px;
    padding: 15px 12px;
-   padding-left: 50px;
+   padding-left: 16px;
    width: 100%;
    outline: transparent;
 }
+.form-group-massege:active,
+.form-group-massege:focus,
+.form-group-massege:hover{
+    fill: #404BBF;
+ border-color:#404BBF;}
+
 .form-label-agreement{
     color: #757575;
     font-weight: 400;
-font-size: 14px;
-line-height: calc(24/14);
+font-size: 12px;
+line-height: 14px;
 user-select: none;
+
 
 }
 .visualy-hidden{
@@ -299,7 +315,7 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     margin-top: 20px;
     margin-bottom: 30px;
-    text-align: left;
+    text-align: center;
     
 }
 
@@ -671,7 +687,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
    .socials-icon{
-    fill: #AFB1B8;
+    fill: #F4F4FD;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -679,7 +695,7 @@ border-radius: 0px 0px 4px 4px;
    }
   .social-link:hover .socials-icon,
   .social-link:focus .socials-icon{
-    fill: #FFFFFF;
+    fill: #F4F4FD;
   }
 /* 
   социальные сети иконки */
@@ -709,7 +725,7 @@ padding-bottom: 94px;
     height: 92px;
     width: 170px;
     align-items: center;
-border: 1px solid #AFB1B8;
+border: 1px solid 8E8F99;
 border-radius: 4px;
 transition-property: border-color;
     transition-duration: 250ms;
@@ -725,11 +741,12 @@ transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
     
-fill: #AFB1B8;
+fill: 
+#AFB1B8;
 }
 .client-item:hover .client-icon,
 .client-item:focus .client-icon{
-    fill: #2196F3;
+    fill:#404BBF;
 }
 
 /* кнопки фильтр портфолио */
@@ -845,17 +862,18 @@ text-align: center;
 
 .footer-conteiner{
     display: flex;
+    
 }
 .footer-cont {
     display: flex;
     align-items: baseline;
 }
-.footer-conteiner-right{
-    margin-left: 70px;
-}
+/* .footer-conteiner-right{
+    margin-left: 80px;
+} */
 .social-media-footer{
     display: flex;
-    gap: 10px;
+    gap: 16px;
 }
 .footer {
     background-color: var(--dark-bg-cl);
@@ -873,7 +891,7 @@ line-height: 24px;
 letter-spacing: 0.02em;
 color: #E7E9FC;
 margin-right: 120px;
-min-width: 264px;
+width: 264px;
 }
 .footer-social-slogan{
 font-weight: 700;
@@ -951,6 +969,7 @@ display: flex;
 
 .footer-form-conteiner{
     margin-left: 80px;
+    margin-right: auto;
 }
 .footer-form-slogan{
     margin-bottom: 20px;
@@ -967,7 +986,7 @@ line-height: calc(24/16);
 }
 .footer-form-input{
     width: 264px;
-    height: 50px;
+    height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -981,8 +1000,8 @@ line-height: calc(24/16);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px;
+    width: 165px;
+    height: 40px;
     color: #FFFFFF;
     background-color:#4D5AE5; 
     font-weight: 700;
