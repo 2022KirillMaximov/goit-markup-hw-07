@@ -454,8 +454,8 @@ Header section
     max-width: 1440px;
     background-color: var(--dark-bg-cl);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 120px;
+    padding-bottom: 120px;
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/working_people.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -522,8 +522,8 @@ Header section
 
 /* преймущества секция */
 .benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .benefits-blocks {
@@ -567,7 +567,8 @@ Header section
 
 /* Чем мы занимаемся секия */
 .about {
-    padding-bottom: 94px;
+    padding-top: 120px;
+    padding-bottom:120px;
 }
 
 .about-slogan {
@@ -607,7 +608,8 @@ Header section
 наша команда секция */
 .team {
     background-color: var(--light-bg-cl);
-    padding-bottom: 94px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     
 }
 
