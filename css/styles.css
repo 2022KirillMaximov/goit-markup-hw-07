@@ -970,8 +970,8 @@ display: flex;
 /* footer form */
 
 .footer-form-conteiner{
-    margin-left: 80px;
-    margin-right: auto;
+    margin-left: auto;
+    
 }
 .footer-form-slogan{
     margin-bottom: 20px;
