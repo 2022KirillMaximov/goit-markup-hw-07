@@ -173,11 +173,7 @@ padding-left: 16px;
 .header-contact:focus {
     color: #404BBF;
 }
-/* .contact-list {
-    display: flex;
-    gap: 50px;
-    } */
-   
+
 @media screen and (max-width:768px){
     .header-nav{
         display: none;
@@ -185,12 +181,8 @@ padding-left: 16px;
 .contact-list{
      display: none;
 }
-
-
 }
-@media screen and (max-width:768px) {
-
-
+@media screen and (min-width:320px) and (max-width:768px) {
 .mobile-menu.is-open{
 opacity: 1;
     visibility: visible;
@@ -284,6 +276,7 @@ opacity: 1;
     color: #404BBF;}
 
 }
+
 .phone-mobile{
     font-weight: 700;
     font-size: 36px;
