@@ -418,7 +418,7 @@ margin-right: 156px;
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./images/working_people_mobile.jpg)";
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/working_people_mobile.jpg);
 
     background-repeat: no-repeat;
     background-position: center;
@@ -477,7 +477,7 @@ margin-right: 156px;
 
   @media screen and (min-width:480px) {
    .baner{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./images/working_people_mobile.jpg)";
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/working_people_mobile.jpg);
     background-size: cover;
 } 
 
@@ -495,7 +495,7 @@ margin-right: 156px;
     @media screen and (min-width:768px) {
 
     .baner{
-        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./images/working_people_tablet.jpg");
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/working_people_tablet.jpg");
         background-size: cover;
 
         }
@@ -512,14 +512,14 @@ margin-right: 156px;
 @media screen and (min-device-pixel-ratio: 2) and (min-width:768px), screen and
   (min-resolution: 192dpi) and (min-width:768px),screen and (min-resolution: 2dppx) and (min-width:768px){
 .baner{
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./images/working_people_tablet@2x.jpg");
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/working_people_tablet@2x.jpg");
     background-size: cover;
     }
   }
 
 @media screen and (min-width:1200px){
     .baner{
-        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./images/working_people_desktop.jpg");
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/working_people_desktop.jpg");
         background-size: cover;
     }
           .baner-button{
@@ -529,7 +529,7 @@ margin-right: 156px;
 @media screen and (min-device-pixel-ratio: 2) and (min-width:1200px), screen and
   (min-resolution: 192dpi) and (min-width:1200px),screen and (min-resolution: 2dppx) and (min-width:1200px) {
      .baner{
-        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("./images/working_people_desktop@2x.jpg");
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/working_people_desktop@2x.jpg");
     
     }
 
