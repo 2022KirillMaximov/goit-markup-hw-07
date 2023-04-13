@@ -182,6 +182,14 @@ padding-left: 16px;
      display: none;
 }
 }
+@media screen and (min-width:768px){
+    .header-nav{
+        display:inline;
+    }
+.contact-list{
+     display:inline;
+}
+}
 @media screen and (min-width:320px) and (max-width:768px) {
 .mobile-menu.is-open{
 opacity: 1;
@@ -232,6 +240,8 @@ opacity: 1;
 }
 
 .mobile-menu-close-button{
+    width: 24px;
+    height: 24px;
     position: absolute;
     top: 24px;
     right: 24px;
@@ -334,9 +344,8 @@ opacity: 1;
     .header-conteiner {
     display: flex;
     align-items: center;
-    margin-right: 16px;
-    margin-left: 16px;}
-
+    justify-content: space-around;
+    }
 }
 
 @media screen and (min-width:1158px){
@@ -570,11 +579,15 @@ margin-right: auto;
    .benefits-blocks {
     width: 356px;
    } 
-
+.benefits-conteiner{
+    padding-left: 16px;
+}
 }
 
 @media screen and (min-width:1158px) {
-
+.benefits-conteiner{
+    padding-left: 0;
+}
 
 }
 
@@ -838,7 +851,6 @@ margin-left: 16px;
 
 @media screen and (min-width:1158px) {
     .clients-list{
-        gap: 30px;
         flex-wrap: nowrap;
        
 
@@ -954,9 +966,9 @@ fill:
 @media screen and (min-width:428px) {
      .footer-cont{
         flex-direction: column;
-         margin-left: auto;
-        margin-right: auto;
         gap:72px;
+        margin-left: auto;
+        margin-right: auto;
         
      }
     
@@ -965,7 +977,12 @@ fill:
     
         .footer-cont{
         flex-direction:row;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 108px;
+        gap: 24px;
      }
+
      .footer-logo-position{
     text-align: left;
  }
@@ -1087,22 +1104,26 @@ display: flex;
 
 
 /* footer form */
-.footer-form-conteiner{
-   }
+
 
 .footer-form-slogan{
-    margin-bottom: 20px;
-    color: #FFFFFF;
-    font-weight: 700;
-font-size: 16px;
+text-align: center; 
+color: #FFFFFF ;
+margin-bottom: 20px;
+font-weight:700;
+font-size:16px;
 line-height: calc(24/16);
-text-align: center;
-}
+ }
+
+
+
 .footer-form{
     display: flex;
-    gap: 16px;
     flex-direction: column;
+    gap: 16px;
 }
+
+
 .footer-form-input{
     width: 398px;
     height: 40px;
@@ -1111,17 +1132,21 @@ text-align: center;
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: #2F303A;
     padding-left: 16px;
-    
-   
-    
 }
+
 @media screen and (min-width: 768px ) {
     .footer-form{
     gap: 24px;
     flex-direction: row;
     }
     .footer-form-slogan{
-       text-align: left; 
+    text-align: left; 
+    color: #FFFFFF ;
+margin-bottom: 20px;
+font-weight:700;
+font-size:16px;
+line-height: calc(24/16);
+
     }
 .footer-form-input{
     width: 264px;
